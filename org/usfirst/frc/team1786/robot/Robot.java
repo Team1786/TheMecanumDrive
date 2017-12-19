@@ -31,7 +31,8 @@ public class Robot extends IterativeRobot {
 		
 		leftTalonFront.set(rotatedX + rotatedY + rotation);
 		leftTalonBack.set(-rotatedX + rotatedY + rotation);
-		rightTalonFront.set(-rotatedX + );
+		rightTalonFront.set(-rotatedX + rotatedY - rotation);
+		rightTalonBack.set(rotatedX + rotatedY - rotation);
 	}
 	
 	@Override
